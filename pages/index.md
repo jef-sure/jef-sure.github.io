@@ -1,0 +1,15 @@
+# Projects
+
+Each section is the documentation of one project as of its latest release;
+the source is in its repository on GitHub.
+
+## ESP32 Projects
+
+| Project | What it does |
+| --- | --- |
+| [DGX](dgx/index.md) | Displays and graphics: SPI, QSPI, I2C, parallel and MIPI-DSI panels, virtual screens, drawing, fonts with soft edges, handwritten text, morphing |
+| [DGX-DI](dgx-di/index.md) | Touch input for DGX displays: fingers in the pixels of the screen, calibration, gestures, buttons, a game pad and a keyboard on the display |
+| [DGX-LVGL](dgx-lvgl/index.md) | LVGL on DGX displays, with DGX-DI touch panels as LVGL input devices |
+| [DGX-GE](dgx-ge/index.md) | A small engine for 2D and 2.5D games on top of DGX |
+| [boards](boards/index.md) | Boards described once as data: the program asks for a display or a sensor by kind, not by the board's name |
+

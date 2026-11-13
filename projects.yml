@@ -1,0 +1,22 @@
+# Where each section of the site comes from.
+#
+# A section takes from its repository only the pages the nav of mkdocs.yml
+# names and the pictures those pages show. A page of the nav is found in the
+# repository by these rules, unless "pages" below names it:
+#   <section>/index.md        README.md
+#   <section>/<dir>/index.md  <dir>/README.md
+#   <section>/<path>.md       docs/<path>.md
+owner: jef-sure
+projects:
+  dgx:
+    repo: esp32-component-dgx
+  dgx-di:
+    repo: esp32-component-dgx-di
+  dgx-lvgl:
+    repo: esp32-component-dgx-lvgl
+  dgx-ge:
+    repo: esp32-component-dgx-ge
+  boards:
+    repo: esp32-component-boards
+    pages:
+      ru/index.md: README.ru.md
