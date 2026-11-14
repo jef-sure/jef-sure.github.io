@@ -20,3 +20,7 @@ projects:
     repo: esp32-component-boards
     pages:
       ru/index.md: README.ru.md
+  pn5180:
+    repo: esp32-component-pn5180
+    pages:
+      ru/index.md: README.ru.md

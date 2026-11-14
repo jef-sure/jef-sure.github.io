@@ -162,3 +162,33 @@ nav:
           - boards/ru/data-format.md
           - boards/ru/how-it-works.md
           - boards/ru/adding-a-board.md
+  - pn5180:
+      - pn5180/index.md
+      - pn5180/en/getting-started.md
+      - pn5180/en/how-it-works.md
+      - pn5180/en/polling.md
+      - pn5180/en/iso14443a.md
+      - pn5180/en/iso14443-4.md
+      - pn5180/en/iso15693.md
+      - pn5180/en/ndef.md
+      - pn5180/en/hardware.md
+      - pn5180/en/troubleshooting.md
+      - pn5180/en/api.md
+      - pn5180/en/development.md
+      - Examples:
+          - pn5180/examples/simple_main/index.md
+          - pn5180/examples/app_logic/index.md
+          - pn5180/examples/ndef/index.md
+      - По-русски:
+          - pn5180/ru/index.md
+          - pn5180/ru/getting-started.md
+          - pn5180/ru/how-it-works.md
+          - pn5180/ru/polling.md
+          - pn5180/ru/iso14443a.md
+          - pn5180/ru/iso14443-4.md
+          - pn5180/ru/iso15693.md
+          - pn5180/ru/ndef.md
+          - pn5180/ru/hardware.md
+          - pn5180/ru/troubleshooting.md
+          - pn5180/ru/api.md
+          - pn5180/ru/development.md

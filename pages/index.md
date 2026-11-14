@@ -12,4 +12,5 @@ the source is in its repository on GitHub.
 | [DGX-LVGL](dgx-lvgl/index.md) | LVGL on DGX displays, with DGX-DI touch panels as LVGL input devices |
 | [DGX-GE](dgx-ge/index.md) | A small engine for 2D and 2.5D games on top of DGX |
 | [boards](boards/index.md) | Boards described once as data: the program asks for a display or a sensor by kind, not by the board's name |
+| [PN5180](pn5180/index.md) | The NXP PN5180 NFC reader: all the cards in the field in one poll, ISO14443A and ISO15693, MIFARE, ISO14443-4 APDUs, NDEF reading and writing |
 
