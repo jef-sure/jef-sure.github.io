@@ -12,7 +12,7 @@ describes a board once, as data.
 
 -   **[Handwritten clock](handwritten-clock/index.md)**
 
-    ![The handwritten clock on the 7-inch display of an ESP32-P4](home/clock-7inch.jpg)
+    ![The handwritten clock on the 2.8-inch display of an ESP32 board](home/clock-cyd.jpg)
 
     A weather clock on an ESP32: the time, the temperature and the place
     name written by a pen in a font of Bézier curves.
