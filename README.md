@@ -1,8 +1,13 @@
 # The site of my projects
 
-The source of https://jef-sure.github.io/. The pages are not written here:
-each section is the documentation of a project, taken from its repository
-at its latest release. Only the start page, `pages/index.md`, lives here.
+The source of https://jef-sure.github.io/. The documentation of each project
+is not written here: it is taken from the project's repository at its latest
+release. What lives here, in `pages/`, is the rest:
+
+- the start page and the first page of each tab;
+- the articles, moved here from Habr, Hackster and Hackaday.io with their
+  pictures, each in English and in Russian;
+- About.
 
 - `mkdocs.yml`: the look, and the nav, which is also the list of what each
   section takes. A page that is not in the nav is not on the site.

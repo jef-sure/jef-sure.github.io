@@ -358,6 +358,25 @@ def relist(lines):
     return out
 
 
+def check_fences(text, where, problems):
+    """A fence without its pair turns the rest of the page into code or code
+    into text, and MkDocs does not notice. An opening fence with a language
+    inside a block that is already open is the usual sign of one."""
+    fence = None
+    for n, line in enumerate(text.split("\n"), 1):
+        m = FENCE.match(line)
+        if not m:
+            continue
+        if fence is None:
+            fence = (m["f"], n)
+        elif closes(line, fence[0]):
+            fence = None
+        elif line.strip()[len(m["f"]):].strip():
+            problems.append(f"{where}: line {n} opens a code block inside the one of line {fence[1]}")
+    if fence:
+        problems.append(f"{where}: the code fence of line {fence[1]} is never closed")
+
+
 class Page:
     def __init__(self, project, repo_path, site):
         self.project = project
@@ -404,6 +423,17 @@ def main():
         git("clone", "--quiet", "--depth", "1", "--branch", project.ref, url, project.dir)
         print(f"{project.section}: {project.repo} at {project.ref}")
 
+    # the pictures and styles of the site's own pages go as they are; its
+    # pages of Markdown, like those of the repositories, only by the nav
+    for root, _, names in os.walk(PAGES):
+        for name in names:
+            if name.endswith(".md"):
+                continue
+            src = os.path.join(root, name)
+            dest = os.path.join(DOCS, os.path.relpath(src, PAGES))
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            shutil.copyfile(src, dest)
+
     pages = []
     for site_path in nav_pages(mkdocs["nav"]):
         section, _, rel = site_path.partition("/")
@@ -414,6 +444,8 @@ def main():
             dest = os.path.join(DOCS, site_path)
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             shutil.copyfile(src, dest)
+            with open(src, encoding="utf-8") as f:
+                check_fences(f.read(), site_path, site.problems)
             continue
         project = projects[section]
         repo_path = repo_path_of(rel, project.overrides)
@@ -429,6 +461,7 @@ def main():
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         with open(dest, "w", encoding="utf-8") as f:
             f.write(site.rewrite(text, page))
+        check_fences(text, page.site, site.problems)
 
     for problem in site.problems:
         print("warning:", problem, file=sys.stderr)

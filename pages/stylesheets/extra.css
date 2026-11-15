@@ -1,0 +1,21 @@
+/* a video of an article, as wide as the text, 16:9 */
+.md-typeset .video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+/* the pictures and videos of the cards on the start page fill the card */
+.md-typeset .grid.cards img,
+.md-typeset .grid.cards video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.2rem;
+}
+
+/* a formula on a line of its own */
+.md-typeset .formula {
+  text-align: center;
+  font-size: 1.2em;
+}
