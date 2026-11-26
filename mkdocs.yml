@@ -68,6 +68,7 @@ nav:
       - dgx:
           - dgx/index.md
           - dgx/api-en.md
+          - dgx/cookbook-en.md
           - dgx/panels-en.md
           - dgx/fonts-en.md
           - dgx/font2c/index.md
@@ -76,6 +77,7 @@ nav:
           - dgx/pen-en.md
           - dgx/morphing-en.md
           - dgx/dsi-usage-en.md
+          - dgx/rgb-display-en.md
           - dgx/host-window-en.md
           - dgx/arduino-en.md
           - dgx/benchmarks-en.md
@@ -104,14 +106,19 @@ nav:
               - dgx/examples/dsi_demo/index.md
               - dgx/examples/ssd1322_demo/index.md
               - dgx/examples/ssd1680_demo/index.md
+              - dgx/examples/st7796s_demo/index.md
+              - dgx/examples/nv3007_demo/index.md
+              - dgx/examples/soft_shapes_demo/index.md
               - dgx/examples/arduino_demo/index.md
           - По-русски:
+              - dgx/cookbook-ru.md
               - dgx/fonts-ru.md
               - dgx/handwriting-ru.md
               - dgx/hw-font-ru.md
               - dgx/pen-ru.md
               - dgx/morphing-ru.md
               - dgx/dsi-usage-ru.md
+              - dgx/rgb-display-ru.md
               - dgx/benchmarks-ru.md
               - dgx/18-bit-pixels-ru.md
               - dgx/first-piece-ru.md
@@ -156,12 +163,14 @@ nav:
               - dgx-ge/host-ru.md
       - boards:
           - boards/index.md
+          - boards/en/getting-started.md
           - boards/en/quick-start.md
           - boards/en/choosing-a-board.md
           - boards/en/moving-a-program.md
           - boards/en/api.md
           - boards/en/modules.md
           - boards/en/touch-firmware.md
+          - boards/en/radio.md
           - boards/en/calibration.md
           - boards/en/tools.md
           - boards/en/data-format.md
@@ -169,12 +178,14 @@ nav:
           - boards/en/adding-a-board.md
           - По-русски:
               - boards/ru/index.md
+              - boards/ru/getting-started.md
               - boards/ru/quick-start.md
               - boards/ru/choosing-a-board.md
               - boards/ru/moving-a-program.md
               - boards/ru/api.md
               - boards/ru/modules.md
               - boards/ru/touch-firmware.md
+              - boards/ru/radio.md
               - boards/ru/calibration.md
               - boards/ru/tools.md
               - boards/ru/data-format.md
