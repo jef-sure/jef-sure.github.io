@@ -126,6 +126,22 @@ nav:
           - dgx-lvgl/examples/index.md
           - По-русски:
               - dgx-lvgl/how-it-works-ru.md
+      - dgx-ui:
+          - dgx-ui/index.md
+          - dgx-ui/en/getting-started.md
+          - dgx-ui/en/api.md
+          - dgx-ui/en/cookbook.md
+          - dgx-ui/en/how-it-works.md
+          - dgx-ui/editor/index.md
+          - dgx-ui/editor/preview/index.md
+          - dgx-ui/tools/index.md
+          - dgx-ui/examples/hello/index.md
+          - По-русски:
+              - dgx-ui/ru/index.md
+              - dgx-ui/ru/getting-started.md
+              - dgx-ui/ru/api.md
+              - dgx-ui/ru/cookbook.md
+              - dgx-ui/ru/how-it-works.md
       - dgx-ge:
           - dgx-ge/index.md
           - dgx-ge/overview-en.md

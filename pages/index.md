@@ -5,8 +5,8 @@ ESP-IDF. DGX drives SPI, QSPI, I2C, 8-bit parallel and MIPI-DSI panels, from
 0.96-inch OLEDs and e-paper to the 10.1-inch display of an ESP32-P4, and draws
 on them with anti-aliased fonts, alpha blending, crossfades, a translucent
 overlay layer, handwritten text written stroke by stroke, and dot morphing.
-DGX-LVGL runs LVGL on the same displays, DGX-DI adds touch input, and boards
-describes a board once, as data.
+dgx-ui puts light widgets on them, DGX-LVGL runs LVGL on the same displays,
+DGX-DI adds touch input, and boards describes a board once, as data.
 
 <div class="grid cards" markdown>
 
@@ -49,7 +49,7 @@ describes a board once, as data.
 
 | Part | What is in it |
 | --- | --- |
-| [ESP32 Components](components/index.md) | Components for ESP-IDF programs: DGX for displays and graphics, touch input, LVGL on DGX displays, a game engine, boards described as data, an NFC reader |
+| [ESP32 Components](components/index.md) | Components for ESP-IDF programs: DGX for displays and graphics, touch input, widgets, LVGL on DGX displays, a game engine, boards described as data, an NFC reader |
 | [Projects](projects/index.md) | Programs built on the components: the handwritten clock |
 | [Articles](articles/index.md) | Articles on the components and projects, first published on Habr, Hackster and Hackaday.io |
 | [Misc](misc/index.md) | Everything else: FIT Visualizer, an extension of VS Code for workouts |

@@ -14,6 +14,10 @@ projects:
     repo: esp32-component-dgx-di
   dgx-lvgl:
     repo: esp32-component-dgx-lvgl
+  dgx-ui:
+    repo: esp32-component-dgx-ui
+    pages:
+      ru/index.md: README-ru.md
   dgx-ge:
     repo: esp32-component-dgx-ge
   boards:
